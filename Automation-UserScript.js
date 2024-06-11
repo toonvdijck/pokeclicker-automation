@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Pokeclicker Automation
-// @namespace    https://github.com/Farigh/pokeclicker-automation/
+// @namespace    https://github.com/toonvdijck/pokeclicker-automation
 // @version      0.1
 // @description  Automation for pokeclicker.com
 // @author       GARCIN David
@@ -9,7 +9,8 @@
 // @grant        none
 // ==/UserScript==
 
-// By default, the script is set to take the latest version available
+// By default, the script is set to take the latest version availableh
+
 // It could be preferable to set this to a label or a commit instead,
 // if you want to fix a set version of the script
 var releaseLabel = "master";
@@ -20,7 +21,7 @@ var disableFeaturesByDefault = false;
 // Set this to true if you want no setting to be enabled by default
 var disableSettingsByDefault = false;
 
-var pokeclickerAutomationReleaseUrl = "https://raw.githubusercontent.com/Farigh/pokeclicker-automation/" + releaseLabel + "/";
+var pokeclickerAutomationReleaseUrl = "https://raw.githubusercontent.com/toonvdijckh/pokeclicker-automation/" + releaseLabel + "/";
 
 // Github only serves plain-text so we can't load it as a script object directly
 let xmlhttp = new XMLHttpRequest();
