@@ -333,6 +333,12 @@ class AutomationFocusAchievements
                     if (aRegion < bRegion) return -1;
                     if (aRegion > bRegion) return 1;
 
+                    // Then sort by requiredValue (lower values first)
+                    const aValue = a.property.requiredValue;
+                    const bValue = b.property.requiredValue;
+                    if (aValue < bValue) return -1;
+                    if (aValue > bValue) return 1;
+                    
                     // Then route kill
                     const isAInstanceOfRouteKillRequirement = Automation.Utils.isInstanceOf(a.property, "RouteKillRequirement");
                     const isBInstanceOfRouteKillRequirement = Automation.Utils.isInstanceOf(b.property, "RouteKillRequirement");
